@@ -1,0 +1,93 @@
+@media(max-width: 1200px){
+    .text{
+        &_fz170px{
+            font-size: 116px;
+            line-height: 114px;
+        }
+    }
+    .img{
+        &_layer3{
+            width: 80px;
+        }
+        &_layer4{
+            width: 130px;
+        }
+        &_layer4-1{
+            width: 70px;
+        }
+        &_layer4-{
+            width: 70px;
+        }
+        &_layer5{
+            width: 80px;
+        }
+        &_layer7{
+            width: 100px;
+        }
+        &_layer8{
+            top: 135px;
+            right: 80px;
+            width: 80px;
+        }
+        &_sperm{
+            width: 250px;
+        }
+        &_sperm1{
+            width: 300px;
+            left: 39%;
+            top: 150px;
+        }
+        &_spray{
+            left: 0;
+        }
+        @keyframes Layer4{
+            0% {
+                width: 110px;
+            }
+            100% {
+                width: 150px;
+            }
+        }
+        @keyframes sperm1_twoSlide{
+            0% {
+                top: 200px;
+                left: 65%;
+            }
+            100% {
+                left: 45%;
+                top: 130px;
+            }
+        }
+    }
+    .slide{
+        &__content{
+            margin-top: 0;
+            width: 800px;
+        }
+        &__text{
+            width: 400px;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        &__subtitle{
+            font-size: 50px;
+        }
+        &__block{
+            margin-top: 80px;
+            &_grid{
+                margin-left: 100px;
+            }
+        }
+        &__modal{
+            padding-left: 10%;
+            &-switch{
+                margin-top: 20px;
+            }
+            &-arrow{
+                border-width: 0 5px 5px 0;
+                padding: 8px;
+            }
+        }
+    }
+}

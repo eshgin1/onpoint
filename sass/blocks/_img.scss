@@ -1,0 +1,130 @@
+.img{
+    position: absolute;
+    pointer-events: none;
+    &_layer3{
+        width: 100px;
+        bottom: 50px;
+        left: 50px;
+        transform: 4s ;
+        animation-name: Layer3;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    &_layer4{
+        bottom: 0px;
+        right: 200px;
+        width: 200px;
+        transform: 4s ;
+        animation-name: Layer4;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    &_layer4-1{
+        width: 100px;
+        top: 10px;
+        right: 10px;
+    }
+    &_layer4-2{
+        width: 100px;
+        bottom: 10px;
+        right: 50%;
+    }
+    &_layer5{
+        top: 120px;
+        right: 150px;
+        animation-name: Layer5;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    &_layer7{
+        width: 150px;
+        top: 80px;
+        left: 0;
+    }
+    &_layer8{
+        top: 200px;
+        right: 100px;
+        width: 100px;
+        animation-name: Layer8;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        z-index: 10;
+    }
+    &_sperm{
+        width: 300px;
+        left: 300px;
+        bottom: 0;
+    }
+    &_sperm1{
+        width: 500px;
+        left: 30%;
+        top: 200px;
+        
+    }
+    &_sperm1_twoSlide{
+        left: 45%;
+        top: 239px;
+        transform: rotate(25deg);
+        animation-name: sperm1_twoSlide;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        z-index: 10;
+    }
+    &_spray{
+        top: 30%;
+        width: 450px;
+        z-index: 100;
+    }
+}
+@keyframes Layer3{
+    0% {
+        left: 50px;
+    }
+    100% {
+        left: 70px;
+    }
+}
+@keyframes Layer4{
+    0% {
+        width: 200px;
+    }
+    100% {
+        width: 250px;
+    }
+}
+@keyframes Layer5{
+    0% {
+        right: 150px;
+    }
+    100% {
+        top: 150px;
+        right: 200px;
+    }
+}
+@keyframes Layer8{
+    0% {
+        top: 200px;
+    }
+    25%{
+        right: 150px;
+    }
+    
+    100% {
+        top: 250px;
+    }
+}
+@keyframes sperm1_twoSlide{
+    0% {
+        top: 300px;
+        left: 55%;
+    }
+    100% {
+        left: 45%;
+        top: 239px;
+    }
+}

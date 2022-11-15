@@ -1,0 +1,77 @@
+.btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    background: rgba(232, 55, 114, 0.738);
+    cursor: pointer;
+    pointer-events: visiblePainted;
+    &__circle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background: #000;
+    }
+    &__arrow{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        width: 20px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        &::after{
+            position: absolute;
+            content: '';
+            top: -2px;
+            left: 13px;
+            width: 8px;
+            height: 2px;
+            transform: rotate(45deg);
+            background: #fff;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            top: 2px;
+            left: 13px;
+            width: 8px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background: #fff;
+        }
+    }
+    &__line{
+        position: relative;
+        background: rgb(255, 255, 255);
+        &-horizontal{
+            width: 20px;
+            height: 2px;
+            left: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-vertical{
+            height: 20px;
+            width: 2px;
+            left: 50%;
+            top: 25%;
+            transform: translateX(-50%);
+        }
+    }
+    &__text{
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    &__slide-three{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
